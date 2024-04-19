@@ -5,11 +5,20 @@ export default class LoginPage{
      constructor(public page:Page){
     this.page=page; 
    }
+
+public Element={
+    username:"#username",
+    password:"#password",
+    loginBtn:"#login"
+
+}
+
+
 async passwordlocator(){
     return  this.page.locator("#username")
 }
    async enterUsername(name:string){
-        await this.page.locator("#username").fill(name)
+        await this.page.locator(this.Element.username).fill(name)
 
     }
     async enterPassword(password:string){
