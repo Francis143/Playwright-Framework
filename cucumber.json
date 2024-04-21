@@ -12,7 +12,27 @@
         "format":[
             "progress-bar",
             "html:test-results/cucumber-report.html",
-            "json:test-results/cucumber-report.json"
-        ]
+            "json:test-results/cucumber-report.json",
+            "rerun:@rerun.txt"
+        ],
+        "parallal":2
+    },
+    "rerun":{
+        "formatOptions":{"snippetInterface":"async-await"},
+        "paths":["src/tests/features/"
+    
+    ],
+        "publish-Quiet":true,
+        "dryRun":false,
+        "require":["src/tests/steps/**/*.ts",
+        "src/Hooks/hook.ts"],
+        "requireModule":["ts-node/register"],
+        "format":[
+            "progress-bar",
+            "html:test-results/cucumber-report.html",
+            "json:test-results/cucumber-report.json",
+            "rerun:@rerun.txt"
+        ],
+        "parallal":2
     }
 }

@@ -9,7 +9,9 @@ export default class LoginPage{
 public Element={
     username:"#username",
     password:"#password",
-    loginBtn:"#login"
+    loginBtn:"#login",
+    location:"#location",
+    hotels:"#hotels"
 
 }
 
