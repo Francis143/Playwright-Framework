@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { Page } from "@playwright/test"
 
 export default class LoginPage{
 
@@ -11,8 +11,26 @@ public Element={
     password:"#password",
     loginBtn:"#login",
     location:"#location",
-    hotels:"#hotels"
-
+    hotels:"#hotels",
+    RoomType: "#room_type",
+    NumberofRooms: "#room_nos",
+    CheckInDate: "#datepick_in",
+    CheckOutDate: "#datepick_out",
+    AdultsperRoom: "#adult_room",
+    childrenperRoom: "#child_room",
+    submit: "#Submit",
+    selectRadioBtn:"#radiobutton_0",
+    continueBtn: "#continue",
+    firstName:"#first_name" ,       
+    lastName: "#last_name",
+    address: "#address",
+    cardNumber: "#cc_num",      
+    creditcardType: "#cc_type",
+    month: "#cc_exp_month",
+    year: "#cc_exp_year",
+    cvv: "#cc_cvv",
+    bookNow: "#book_now",
+    orderNo: "#order_no",
 }
 
 

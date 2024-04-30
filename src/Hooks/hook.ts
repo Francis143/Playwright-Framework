@@ -1,14 +1,14 @@
 import { BeforeAll,AfterAll,Before,After, Status, AfterStep } from "@cucumber/cucumber";
-import { chromium,Browser,Page, BrowserContext } from "@playwright/test";
+import { chromium,Browser,Page, BrowserContext } from "@playwright/test"
 import { pageFixture } from "./pageFixture";
-import path from "path";
+
 
 
 
 let browser:Browser;
 let context:BrowserContext;
 BeforeAll(async function(){
-    browser=await chromium.launch({headless:false,slowMo:1000})
+    browser=await chromium.launch({headless:false,slowMo:200})
 })
 Before(async function(){
   context=await browser.newContext()
